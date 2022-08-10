@@ -19,7 +19,10 @@
                          {% for feedback in feedbackList.feedbacks %}
                               {
                                 "@type"             : "Review",
-                                "author"            : "{{ feedback.authorName}}",
+                                "author"            : {
+                                 "@type": "Person",
+                                 "name": "{{ feedback.authorName  }}"
+                                },
                                 "datePublished"     : "{{ feedback.createdAt }}",
                                 "name"              : "{{ feedback.title }}",
                                 "reviewBody"       : "{{ feedback.feedbackComment.comment.message }}",

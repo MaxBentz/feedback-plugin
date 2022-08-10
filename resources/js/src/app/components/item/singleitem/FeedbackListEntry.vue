@@ -134,7 +134,6 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
 
 export default {
   name: 'FeedbackListEntry',
@@ -160,14 +159,14 @@ export default {
     }
   },
 
-  created () {
-    this.feedbackData = this.feedback
-  },
-
   computed: {
     authenticatedUser () {
       return this.$store.state.feedback.authenticatedUser
     }
+  },
+
+  created () {
+    this.feedbackData = this.feedback
   },
 
   methods: {

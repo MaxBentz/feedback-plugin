@@ -272,18 +272,18 @@ export default {
         return this.currentVariation && this.currentVariation.variation.id
       },
 
-        authenticatedUser () {
-            return this.$store.state.feedback.authenticatedUser
-        },
-        counts () {
-            return this.$store.state.feedback.counts
-        },
-        feedbacks () {
-            return this.$store.state.feedback.feedbacks
-        },
-        pagination () {
-            return this.$store.state.feedback.pagination
-        }
+      authenticatedUser () {
+        return this.$store.state.feedback.authenticatedUser
+      },
+      counts () {
+        return this.$store.state.feedback.counts
+      },
+      feedbacks () {
+        return this.$store.state.feedback.feedbacks
+      },
+      pagination () {
+        return this.$store.state.feedback.pagination
+      }
     },
 
   mounted () {
