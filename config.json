@@ -9,7 +9,7 @@
                     "required": false,
                     "label": "Config.releaseFeedbacks",
                     "options": {
-                        "defaultValue": 0,
+                        "defaultValue": 2,
                         "selectBoxValues":[
                             {
                                 "value": 0,
